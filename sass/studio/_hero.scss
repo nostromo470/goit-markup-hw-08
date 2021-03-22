@@ -1,0 +1,74 @@
+.hero {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--back-hero-footer-grey);
+    text-align: center;
+    padding: 0px;
+  }
+  
+  .hero__overlay {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/Overlay.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .hero__title {
+    color: var(--white-text);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  
+  .hero__button {
+    border: none;
+    color: var(--white-text);
+    background-color: var(--blue-text);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+  }   
+
+  .hero__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    z-index: 1;
+    transition: opacity var(--transition-dur-timing);
+    
+    &--hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    &--hidden .modal {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+  }
+  
+  
