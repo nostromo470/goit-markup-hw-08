@@ -1,73 +1,29 @@
 .header {
-    height: 60px;
+    height: 80px;
     display: block;
     align-items: center;
-
-    @media screen and (min-width: 768px) {
-      height: 80px;
-    }
   }
-
-  .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .menu-toggle {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    display: flex;
-    @media screen and (min-width: 768px) {
-      display: none;
-    }   
-  }
-
-
   
-  .header__nav {
-    display: flex;
-    align-items: center;
-  }
-
+  .header__nav,
   .header__contacts-list {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-
-    @media screen and (min-width: 1200px) {
-      display: flex;
-    }
+    display: flex;
+    align-items: center;
   }
   
   .header__nav {
-    height: 60px;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
-
-    @media screen and (min-width: 768px) {
-      height: 80px;
-    }
   }
   
   .header__logo {
-    @media screen and (max-width: 1199px) {
-      margin-right: 88px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-      margin-right: 93px;
-      }
+    margin-right: 93px;
   }
   
   .header__list {
     padding: 0;
     display: flex;
     align-items: center;
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
   }
   
   .header__list-item:not(:last-child) {
@@ -75,11 +31,7 @@
   }
   
   .header__list-item:last-child {
-    margin-right: 84px;
-
-    @media screen and (min-width: 1200px) {
-      margin-right: 305px;
-    }
+    margin-right: 331px;
   }
   
   .header__link {
@@ -115,20 +67,14 @@
   }
   
   .header__contact:not(:last-child) {
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 10px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-      margin-right: 30px;
-    }    
+    margin-right: 30px;
   }
   
   .header__mail-tel {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--grey-text);
@@ -138,12 +84,8 @@
     &:hover,
     &:focus {
     color: var(--blue-text);
-    }
-    
-    @media screen and (min-width: 1200px) {
-      font-size: 14px;
-    }
   }
+}
   
   .header__icon {
     fill: currentColor;

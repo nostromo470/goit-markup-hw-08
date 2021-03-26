@@ -1,12 +1,30 @@
+.portfolio-page {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .buttons-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      justify-content:center;
+    }
   }
   
+  .buttons-list__item:nth-child(-n + 3) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+
   .buttons-list__item:not(:last-child) {
     margin-right: 8px;
   }
+
   
   .buttons-list__button {
     color: var(--black-light-text);
