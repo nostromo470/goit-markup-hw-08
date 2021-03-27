@@ -47,13 +47,17 @@
   
   .portfolio-cards__thumb {
     position: relative;
+    width: 100%;
+    height: 294px;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    overflow: hidden;    
   }
   
   .portfolio-cards__image {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
   }
   
