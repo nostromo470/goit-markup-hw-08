@@ -3,14 +3,19 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     background: var(--white-text);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform var(--transition-dur-timing);
+
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+      height: 581px;
+    }
   }
   
   .close-button {
@@ -118,13 +123,23 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: var(--grey-text);
+
+    @media screen and (min-width: 1200px){
+     font-size: 14px;
+     line-height: 24px;
+    }
   }
+
+    .modal__confirm label {
+      display: flex
+    }  
   
   .modal__contract-link {
+    display: inline-block;   
     color: var(--blue-text);
     text-decoration: underline;
     margin-left: 3px;
@@ -156,7 +171,7 @@
     height: 15px;
     border: 2px solid var(--black-text);
     border-radius: 2px;
-    margin-right: 8.38px;
+    margin-right: 8px;
   }  
     
   .confirm-button {
